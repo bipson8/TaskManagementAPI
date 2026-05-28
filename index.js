@@ -20,6 +20,7 @@ app.use((err,req,res,next)=>{
     })
 })
 
-app.listen(process.env.PORT,process.env.HOSTNAME,()=>{
+const PORT=process.env.PORT || 3000;
+app.listen(PORT,()=>{
     console.log(`The server is running`);
 })
